@@ -5,9 +5,11 @@ jQuery(document).ready(function($) {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
+      $('#logo-link').removeClass('hide-logo');
     } else {
       $('.back-to-top').fadeOut('slow');
       $('#header').removeClass('header-fixed');
+      $('#logo-link').addClass('hide-logo');
     }
   });
   $('.back-to-top').click(function() {

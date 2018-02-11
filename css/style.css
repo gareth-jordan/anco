@@ -1205,3 +1205,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-links a:hover {
   color: #0296c4;
 }
+
+#logo .hide-logo{
+  display: none;
+}
