@@ -1,21 +1,13 @@
 jQuery(document).ready(function($) {
 
-  if ($(this).scrollTop() > 100) {
-    $('.back-to-top').fadeIn('slow');
-    $('#header').addClass('header-fixed');
-    $('#header-logo').removeClass('logo-hide');
-  }
-
   // Header fixed and Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
-      $('#header-logo').removeClass('logo-hide');
     } else {
       $('.back-to-top').fadeOut('slow');
       $('#header').removeClass('header-fixed');
-      $('#header-logo').addClass('logo-hide');
     }
   });
   $('.back-to-top').click(function() {
@@ -25,8 +17,8 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  // Initiate the AOS animation library
-  AOS.init();
+  // Initiate the wowjs animation library
+  new WOW().init();
 
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
